@@ -7,8 +7,8 @@ const Layout = ({ children }) => {
         <>
             <Nav />
             <main>{children}</main>
-            <CompanyFooter />
-            <Bottom />
+            <CompanyFooter  />
+            <Bottom  />
         </>
     );
 };

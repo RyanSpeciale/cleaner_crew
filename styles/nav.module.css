@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&family=Oleo+Script+Swash+Caps:wght@400;700&display=swap');
+
+
+.titleContainer {
+    margin-bottom: 0.4cm;
+}
+
+.title {
+    font-family: 'Oleo Script', cursive;
+    text-shadow: 2px 2px 8px grey;
+    
+}
+
+.contact {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 1cm;
+    font-weight: 600;
+}
