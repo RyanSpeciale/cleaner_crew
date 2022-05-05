@@ -5,8 +5,22 @@
 
 
 .main {
-  background-image: url('../photos/istock.jpg');
+  background-image: url('../photos/clean5.jpeg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.main2 {
+  background-color: whitesmoke;
+}
+
+.serving {
+  margin-top: 2cm;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button {
+  color: white;
+  background-color: white;
 }
