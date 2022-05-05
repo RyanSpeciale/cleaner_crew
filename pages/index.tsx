@@ -24,7 +24,7 @@ const Home: NextPage = () => {
           <Text className={styles.text} alignSelf='center' size='large'>
             We do everything from the bathroom to the garage!
           </Text>
-          <Button className={styles.button} primary color='black' alignSelf='center' justify='center' label='Get a Free Quote'/>
+          <Button className={styles.button} primary color='black' margin={{ top: '0.8cm'}} alignSelf='center' justify='center' label='Get a Free Quote'/>
         </Box>
       </Box>
     </div>

@@ -13,7 +13,7 @@ const Nav: React.FunctionComponent = () => {
             </Box>
             <Header align="center" justify='center'>
                 <Button primary label='Home'/>
-                <Button primary label='Get A Quote'/>
+                <Button primary label='Get A Free Quote'/>
                 <Button primary label='Services'/>
                 <Button primary label='About Us' />
             </Header>
