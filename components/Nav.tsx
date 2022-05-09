@@ -12,10 +12,10 @@ const Nav: React.FunctionComponent = () => {
                 <Text className={styles.contact} size='large'>Call or Text (262) 612-0397 </Text>   
             </Box>
             <Header align="center" justify='center'>
-                <Button primary label='Home'/>
-                <Button primary label='Get A Free Quote'/>
-                <Button primary label='Services'/>
-                <Button primary label='About Us' />
+                <Button primary label='Home' href="/"/>
+                <Button primary label='Get A Free Quote' href="/quote"/>
+                <Button primary label='Services' href="/services"/>
+                <Button primary label='About Us' href="/about"/>
             </Header>
         </div>
     );

@@ -1,0 +1,19 @@
+.mainBox {
+    margin-top: 1cm;
+}
+
+.residential {
+    margin-top: 0.5cm;
+    background-image: url('../photos/clean6.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.commercial {
+    margin-top: 0.5cm;
+    background-image: url('../photos/clean3.jpg');
+    background-size: cover;
+    background-position: top;
+    
+}
