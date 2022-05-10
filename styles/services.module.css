@@ -1,19 +1,19 @@
-.mainBox {
-    margin-top: 1cm;
+.container {
+    margin-top: 0.4cm;
 }
 
-.residential {
-    margin-top: 0.5cm;
+.titleBox {
     background-image: url('../photos/clean6.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    
 }
 
-.commercial {
-    margin-top: 0.5cm;
-    background-image: url('../photos/clean3.jpg');
-    background-size: cover;
-    background-position: top;
-    
+.tabsBox {
+    margin-top: 1.5cm;
+    background-color:lightslategrey;
 }
+
+
+
+

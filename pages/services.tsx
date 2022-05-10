@@ -13,23 +13,26 @@ import { Tabs } from "grommet";
 
 const services = () => {
     return (
-        <div>
+        <div className={styles.container}>
             <Box justify="center" align="center">
-                <Heading  size="small">Below is our services broken down by category for your convienience! If you need a service not listed, just reach out and we will try and accommodate!</Heading>
-            </Box>
-            <Box className={styles.mainBox} direction='row-responsive' round='medium' justify="center">
-                <Tabs alignControls="center">
-                    <Tab title='Residential'>
-                        <Box className={styles.residential} round='medium' border={{ size: 'small', color: 'black', style: 'solid'}} elevation="medium" width='24cm' height='medium'>
-                            <Text>We offer</Text>
-                        </Box>
-                    </Tab>
-                    <Tab title='Commercial'>
-                        <Box className={styles.commercial} round='medium' elevation="medium" width='24cm' height='medium'>
-                            
-                        </Box>
-                    </Tab>
-                </Tabs>
+                <Box className={styles.titleBox} width='24cm' pad='medium' round="medium" height='medium' justify="center" border={{ size:'small', color: 'red' }}>
+                    <Heading size="small" textAlign="center">
+                        We offer both residential and commercial cleaning services, they are broken down by category below. If you need a service not listed below, just reach out! We also have a map showing the areas around Kenosha that we serve.
+                    </Heading>
+                </Box>
+                <Box className={styles.tabsBox} width='large' direction="row-responsive" round="medium" height='medium' justify="center" border={{ size:'small', color: 'red' }}>
+                    <Tabs>
+                        <Tab title="Kitchen Area">
+
+                        </Tab>
+                        <Tab title="Living Area">
+
+                        </Tab>
+                    </Tabs>
+                </Box>
+                <Box>
+                    
+                </Box>
             </Box>
         </div>
     );
