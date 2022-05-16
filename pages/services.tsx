@@ -30,8 +30,8 @@ const services = () => {
                         </Tab>
                     </Tabs>
                 </Box>
-                <Box>
-                    
+                <Box border={{ size: 'small', color: 'red' }}>
+
                 </Box>
             </Box>
         </div>
