@@ -26,7 +26,7 @@ const services = () => {
 
                         </Tab>
                         <Tab title="Living Area">
-
+ 
                         </Tab>
                     </Tabs>
                 </Box>
