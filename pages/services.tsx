@@ -1,11 +1,4 @@
 import { Box, Heading, Tab } from "grommet";
-import { CardFooter } from "grommet";
-import { Form } from "grommet";
-import { Card } from "grommet";
-import { Text } from "grommet";
-import { Menu } from "grommet";
-import { CardHeader } from "grommet";
-import { CardBody } from "grommet";
 import styles from '../styles/services.module.css'
 import { Tabs } from "grommet";
 
