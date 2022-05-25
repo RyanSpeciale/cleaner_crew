@@ -1,18 +1,16 @@
 .container {
-    margin-top: 0.4cm;
+    margin-top: 0.7cm;
 }
 
 .titleBox {
-    background-image: url('../photos/clean6.jpg');
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: azure;
 }
 
 .tabsBox {
     margin-top: 1.5cm;
-    background-color:lightslategrey;
+    background-color: azure;
 }
+
 
 
 

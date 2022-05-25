@@ -1,11 +1,11 @@
 import React from 'react'
 
-type Props = {
-    name?: string;
-}
+type aboutProps = {}
 
-export default function about({}: Props) {
+const about = (props: aboutProps) => {
   return (
     <div>about</div>
   )
 }
+
+export default about;

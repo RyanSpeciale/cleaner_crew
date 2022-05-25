@@ -1,6 +1,9 @@
-import { Box, Heading, Tab } from "grommet";
+import { Box, Heading, Tab, Text } from "grommet";
 import styles from '../styles/services.module.css'
 import { Tabs } from "grommet";
+import Map from '../components/Map'
+
+
 
 
 
@@ -8,12 +11,10 @@ const services = () => {
     return (
         <div className={styles.container}>
             <Box justify="center" align="center">
-                <Box className={styles.titleBox} width='24cm' pad='medium' round="medium" height='medium' justify="center" border={{ size:'small', color: 'red' }}>
-                    <Heading size="small" textAlign="center">
-                        We offer both residential and commercial cleaning services, they are broken down by category below. If you need a service not listed below, just reach out! We also have a map showing the areas around Kenosha that we serve.
-                    </Heading>
+                <Box direction="column" width='large' justify="center" basis="50%" className={styles.descriptionbox}>
+                    <Text size="xlarge" alignSelf="center">Below is a description of our services broken down by category, as well as a map with the general area that we cover!</Text>
                 </Box>
-                <Box className={styles.tabsBox} width='large' direction="row-responsive" round="medium" height='medium' justify="center" border={{ size:'small', color: 'red' }}>
+                <Box className={styles.tabsBox} width='large' direction="row-responsive" round="medium" height='medium' justify="center" border={{ size:'small', color: 'black' }}>
                     <Tabs>
                         <Tab title="Kitchen Area">
 
@@ -23,12 +24,12 @@ const services = () => {
                         </Tab>
                     </Tabs>
                 </Box>
-                <Box border={{ size: 'small', color: 'red' }}>
-
+                <Box margin={{ top: '0.5cm'}} border={{ size: 'medium', color: 'black' }} round="small"   >
+                    <Map />
                 </Box>
             </Box>
         </div>
     );
-};
+}
 
 export default services;
