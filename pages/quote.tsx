@@ -1,5 +1,5 @@
 import React from 'react';
-import { Form, FormField, TextInput } from 'grommet';
+import { Button, Form, FormField, TextInput, Text } from 'grommet';
 import { Box } from 'grommet';
 import styles from '../styles/quote.module.scss'
 
@@ -15,9 +15,11 @@ const Quote = () => {
     <div className={styles.mainDiv}>
       <Box justify='center' direction='column'>
         <Box className={styles.titleBox} round='small' justify='center' direction='row-responsive' width='24cm' height='8cm' border={{ color: 'red', size: 'small'}}>
-
+          <Text>
+            Get a free estimate on your cleaning needs!
+          </Text>
         </Box>
-        <Box className={styles.formbox} round='small' gap='medium' pad='medium' alignSelf='center' direction='column' width='large' height='large' margin={{ top: '2cm'}} border={{ color: 'black', size: 'small'}}>
+        <Box className={styles.formbox} round='small' gap='large' pad='medium' alignSelf='center' direction='column' width='14cm' margin={{ top: '2cm'}} border={{ color: 'black', size: 'small'}}>
           <Form>
             <FormField label='First Name'>
               <TextInput />
@@ -25,6 +27,18 @@ const Quote = () => {
             <FormField label='Last Name'>
               <TextInput  />
             </FormField>
+            <FormField label='Full Address'>
+              <TextInput />
+            </FormField>
+            <FormField label='Contact Phone Number'>
+              <TextInput />
+            </FormField>
+            <FormField label='Email'>
+              <TextInput />
+            </FormField>
+            <Box direction='row-responsive' justify='center' >
+              <Button primary label='Submit' />
+            </Box>
           </Form>
         </Box>
       </Box>
