@@ -14,13 +14,14 @@ const Quote = () => {
   return (
     <div className={styles.mainDiv}>
       <Box justify='center' direction='column'>
-        <Box className={styles.titleBox} round='small' justify='center' direction='row-responsive' width='24cm' height='8cm' border={{ color: 'red', size: 'small'}}>
-          <Text>
-            Get a free estimate on your cleaning needs!
+        <Box className={styles.titleBox} round='small' pad='large' justify='center' direction='row-responsive' width='24cm' height='8cm' border={{ color: 'black', size: 'small'}}>
+          <Text size='large'>
+            Getting a quote gives you a set price for the services you would like. All quotes are done in-person at the location the services would be provided. An in-person quote would consist of meeting your housekeeper, going over the specific details of what services your housekeeper would be providing, and figuring out a schedule that best accommodates you. Please feel free to request an in-person quote by submitting the form below.
           </Text>
         </Box>
         <Box className={styles.formbox} round='small' gap='large' pad='medium' alignSelf='center' direction='column' width='14cm' margin={{ top: '2cm'}} border={{ color: 'black', size: 'small'}}>
           <Form>
+            <Text alignSelf='center' textAlign='center' className={styles.time}>We will respond within 48 hours</Text>
             <FormField label='First Name'>
               <TextInput />
             </FormField>
@@ -48,13 +49,3 @@ const Quote = () => {
 
 export default Quote;
 
-<Box direction='column' gap='small' basis='60%' width="medium" round="medium" pad='small' height="16cm" border={{ color: 'black', size: 'medium' }} className={styles.formbox}>
-        <Form className={styles.form}>
-          <FormField name='firstName' label='First Name'>
-            <TextInput name='firstName' />
-          </FormField>
-          <FormField name='lastName' label='Last Name'>
-            <TextInput name='lastname' />
-          </FormField>
-        </Form>
-      </Box>

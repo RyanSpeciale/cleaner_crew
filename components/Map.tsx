@@ -1,16 +1,15 @@
 import React from 'react';
-import { StaticGoogleMap, Marker } from 'react-static-google-map';
+import Image from 'next/image';
+import map from '../photos/map.jpg';
 
 
 
 const Map = () => {
   return (
     <div>
-        <StaticGoogleMap apiKey={process.env.GOOGLE_MAPS_API} size="700x500" center="Kenosha, WI" zoom={12}>
-            <Marker location={{ lat: 42.58386018849419, lng: -87.82354825353667}} />
-        </StaticGoogleMap>
+      <Image height={400} width={400} alt='map' src={map} />
     </div>
   )
 }
 
-export default Map
+export default Map;

@@ -16,6 +16,8 @@ const Nav: React.FunctionComponent = () => {
                 <Button primary label='Get A Free Quote' href="/quote"/>
                 <Button primary label='Services' href="/services"/>
                 <Button primary label='About Us' href="/about"/>
+                <Button primary label='Reviews' href="/reviews"/>
+                <Button primary label='Photo Gallery' href="/photos"/>
             </Header>
         </div>
     );
