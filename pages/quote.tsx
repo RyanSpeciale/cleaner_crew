@@ -20,7 +20,7 @@ const Quote = () => {
 					justify='center'
 					direction='row-responsive'
 					width='24cm'
-					height='8cm'
+					height='9cm'
 					border={{ color: 'black', size: 'small' }}
 				>
 					<Text size='large'>

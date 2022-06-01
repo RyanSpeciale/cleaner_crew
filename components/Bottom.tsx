@@ -1,6 +1,5 @@
 import { Anchor, Text } from "grommet";
 import { Footer } from "grommet";
-import { Button } from "grommet";
 import { Github } from "grommet-icons";
 import { Twitter } from "grommet-icons";
 
@@ -19,8 +18,8 @@ const Bottom: React.FunctionComponent = () => {
         <div>
             <Footer justify="center" align="center" gap="xsmall">
                 <Text>Coded with <span role='img' aria-label="Heart Emoji">💗</span> by Ryan Speciale.</Text>
-                <Anchor icon={<Github/>}/>
-                <Anchor icon={<Twitter/>}/>
+                <Anchor icon={<Github/>} href="" />
+                <Anchor icon={<Twitter/>} href="" />
             </Footer>
         </div>
     );
