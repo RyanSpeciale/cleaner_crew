@@ -1,10 +1,12 @@
 import React from 'react';
 import { Form, FormField, TextInput, Box, Button } from 'grommet';
 import { send } from '@emailjs/browser';
+import { useRouter } from 'next/router';
 
 const FormComponent = () => {
 	const [value, setValue] = React.useState({});
 
+	const router = useRouter();
 	
 	
 	return (
@@ -14,9 +16,10 @@ const FormComponent = () => {
 			onReset={() => setValue({})}
 			onSubmit={({ value }) => {
 				console.log(value);
-				send(process.env.NEXT_PUBLIC_EMAILJS_SERVICEID, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATEID, value, process.env.NEXT_PUBLIC_EMAILJS_PUBLICKEY)
+				send(process.env.NEXT_PUBLIC_EMAILJS_SERVICEID!, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATEID!, value, process.env.NEXT_PUBLIC_EMAILJS_PUBLICKEY!)
 					.then((response) => {
 						console.log(response.text)
+						router.push('/success')
 					}, (error) => {
 						console.log(error.text)
 					})

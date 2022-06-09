@@ -1,10 +1,13 @@
-import React from 'react'
+import React from 'react';
+import styles from '../styles/about.module.scss';
 
 type aboutProps = {}
 
 const about = (props: aboutProps) => {
   return (
-    <div>about</div>
+    <div className={styles.mainContainer}>
+
+    </div>
   )
 }
 
