@@ -1,5 +1,6 @@
 .mainDiv {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 0.6cm;
     
@@ -18,4 +19,12 @@
 
 .time {
     margin-left: 3cm;
+}
+
+.Alert {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    align-self: center;
+
 }
