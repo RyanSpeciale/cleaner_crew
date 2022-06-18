@@ -60,6 +60,11 @@ const services = () => {
                                 <li className='text-2xl'>Vacuum or sweeping and mopping</li>
                             </ul>
                         </Tab>
+						<Tab title='Deep Cleans'>
+							<p className='p-3 text-2xl'>
+								Having a deep clean provided on your home as a first time service is highly recommended. Deep cleanings include everything in a general cleaning, as well as the necessary add-ons to make your home as clean as it possibly can be. During your in-home quote you will be provided with suggestions that would help your home acquire a new clean sensation,  you can also request for anything to be cleaned.
+							</p>
+						</Tab>
 					</Tabs>
 				</Box>
 				<Box

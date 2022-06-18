@@ -1,13 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
-import map from '../photos/map.jpg';
+import map2 from '../photos/map2.jpg';
 
 
 
 const Map = () => {
   return (
     <div>
-      <Image height={400} width={400} alt='map' src={map} />
+      <Image height={500} width={400} alt='map' src={map2} />
     </div>
   )
 }

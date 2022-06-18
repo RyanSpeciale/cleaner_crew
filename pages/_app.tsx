@@ -5,8 +5,15 @@ import Layout from '../components/Layout'
 
 
 const myTheme = {
-  tabs: {
-    background: 'black'
+  tab: {
+    color: 'black',
+    border: {
+      side: 'bottom',
+      color: 'green'
+    },
+    active: {
+      color: 'green'
+    }
   }
 }
 
@@ -15,7 +22,7 @@ const myTheme = {
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div>
-      <Grommet>
+      <Grommet theme={myTheme}>
         <Layout>
           <Component {...pageProps} />
         </Layout>
