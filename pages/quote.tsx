@@ -26,7 +26,7 @@ const Quote = () => {
 				<Collapse className={styles.Alert} in={show}>
 					<Alert severity='info' action={<IconButton aria-label='close' size='small' onClick={() => { setShow(false)}}><CloseIcon fontSize='inherit'/></IconButton>}>
 						<AlertTitle>Hey There!</AlertTitle>
-						<p className=''>Getting a quote gives you a set price for the services you'd like done. All quotes are done in-person at the location the services would be provided. An in-person quote would consist of meeting your housekeeper, going over the specific details of what services your housekeeper would be providing, and figuring out a schedule that best accommodates you. Please feel free to request an in-person quote by submitting the form below.</p>
+						<p className=''>Getting a quote gives you a set price for the services you&apos;d like done. All quotes are done in-person at the location the services would be provided. An in-person quote would consist of meeting your housekeeper, going over the specific details of what services your housekeeper would be providing, and figuring out a schedule that best accommodates you. Please feel free to request an in-person quote by submitting the form below.</p>
 					</Alert>
 				</Collapse>
 				: <button className='bg-emerald-800 text-zinc-100 justify-center items-center self-center p5 w-28 font-semibold rounded-md animate-bounce mt-4' onClick={() => { setShow(true)}}>Show Alert</button>}

@@ -6,7 +6,7 @@ import Layout from '../components/Layout'
 
 const myTheme = {
   tabs: {
-    extended: `color: 'green'`
+    background: 'black'
   }
 }
 
