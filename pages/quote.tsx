@@ -26,11 +26,10 @@ const Quote = () => {
 				<Collapse className={styles.Alert} in={show}>
 					<Alert severity='info' action={<IconButton aria-label='close' size='small' onClick={() => { setShow(false)}}><CloseIcon fontSize='inherit'/></IconButton>}>
 						<AlertTitle>Hey There!</AlertTitle>
-						Getting a free in person quote of the place you want to get cleaned gives you a guarented price for all future jobs.
+						<p className=''>Getting a quote gives you a set price for the services you'd like done. All quotes are done in-person at the location the services would be provided. An in-person quote would consist of meeting your housekeeper, going over the specific details of what services your housekeeper would be providing, and figuring out a schedule that best accommodates you. Please feel free to request an in-person quote by submitting the form below.</p>
 					</Alert>
 				</Collapse>
-				: <Button onClick={() => { setShow(true); }}>Show Alert</Button>
-			}
+				: <button className='bg-emerald-800 text-zinc-100 justify-center items-center self-center p5 w-28 font-semibold rounded-md animate-bounce mt-4' onClick={() => { setShow(true)}}>Show Alert</button>}
 			<Box justify='center' direction='column'>
 				<Box
 					className={styles.formbox}

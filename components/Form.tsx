@@ -5,7 +5,6 @@ import { useRouter } from 'next/router';
 
 const FormComponent = () => {
 	const [value, setValue] = React.useState({});
-
 	const router = useRouter();
 	
 	
@@ -47,7 +46,7 @@ const FormComponent = () => {
 				<TextInput id='text-input-id' name='number' />
 			</FormField>
 			<Box direction='row' gap='medium' justify='center'>
-				<Button type='submit' primary label='Submit' />
+				<Button color='black' type='submit' primary label='Submit' />
 			</Box>
 		</Form>
 	);

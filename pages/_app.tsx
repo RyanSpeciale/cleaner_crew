@@ -4,6 +4,14 @@ import { Grommet } from 'grommet'
 import Layout from '../components/Layout'
 
 
+const myTheme = {
+  tabs: {
+    extended: `color: 'green'`
+  }
+}
+
+
+
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <div>

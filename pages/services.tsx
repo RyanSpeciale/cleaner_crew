@@ -8,16 +8,6 @@ const services = () => {
 		<div className={styles.container}>
 			<Box justify='center' align='center'>
 				<Box
-					direction='column'
-					width='large'
-					justify='center'
-					basis='50%'
-					border={{ color: 'red', size: 'small' }}
-					className={styles.descriptionbox}
-				>
-					<h5>hello</h5>
-				</Box>
-				<Box
 					className={styles.tabsBox}
 					width='large'
 					direction='row-responsive'
