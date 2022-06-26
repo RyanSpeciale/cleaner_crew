@@ -1,0 +1,33 @@
+
+.mainContainer {
+    padding: 10px;
+    
+}
+
+.Form {
+    width: 50vw;
+}
+
+.Spinner {
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    padding: 10px;
+}
+
+.reviewsContainer {
+    display: flex;
+    flex-flow: wrap;
+
+}
+.singleReview {
+    height: fit-content;
+    width: 20vw;
+    padding: '50px'
+}
+
+.reviewPaper {
+    background-color: cornsilk;
+    border: '3px solid black'
+    
+}

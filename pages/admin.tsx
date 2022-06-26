@@ -1,11 +1,27 @@
-import React from 'react'
+import React from "react";
+import { prisma } from '../utils/prisma';
+import { Grid, Button, Typography, ButtonGroup, Paper,  } from "@mui/material";
+import { DataGrid } from '@mui/x-data-grid';
+import styles from '../styles/admin.module.scss';
 
-type Props = {}
 
-const admin = (props: Props) => {
+
+const admin = () => {
   return (
-    <div>admin</div>
-  )
-}
+    <div className={styles.mainDiv}>
+      <Grid container>
+        
+      </Grid>
+    </div>
+  );
+};
 
 export default admin;
+
+
+export async function getServerSideProps() {
+
+  return {
+    props: {}
+  }
+}
