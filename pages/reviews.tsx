@@ -13,15 +13,16 @@ import { useState } from "react";
 import axios from "axios";
 import styles from "../styles/reviews.module.scss";
 import { prisma } from '../utils/prisma'
-import { Box, Button, Form, FormField, TextArea, TextInput, Spinner } from "grommet";
-
+import { Box, Form, FormField, TextArea, TextInput, Spinner } from "grommet";
+import { Button } from "react-bootstrap";
+import { Rating } from "@mui/material"
 
 const Reviews = ({ reviews }: any) => {
   const [title, setTitle] = useState('');
   const [name, setName] = useState('');
   const [body, setBody] = useState('')
   const [loading, setLoading] = useState(true);
-  
+  const [rating, setRating] = React.useState<number | null>(3);
   
 
 
@@ -35,11 +36,13 @@ const Reviews = ({ reviews }: any) => {
       name: name,
       title: title,
       body: body,
+      rating: rating,
       verified: false
     })
     setTitle('')
     setName('')
     setBody('')
+    setRating(0)
     setLoading(false)
     refreshPage()
   }
@@ -48,6 +51,7 @@ const Reviews = ({ reviews }: any) => {
     setTitle('')
     setName('')
     setBody('')
+    setRating(0)
   }
 
   useEffect(() => {
@@ -89,9 +93,15 @@ const Reviews = ({ reviews }: any) => {
           <FormField>
             <TextArea value={body} placeholder='Give us your thoughts!' onChange={(event) => setBody(event.target.value)} />
           </FormField>
-          <Box direction="row" gap="medium" pad='medium' justify="center">
-            <Button primary size='large' onClick={onSubmitHandler}>Submit</Button>
-            <Button primary size='large' onClick={resetForm}>Reset</Button>
+          <Box direction='row' justify="center" alignContent="center" basis="center">
+            Give us a rating.
+          </Box>
+          <Box direction='row' justify="center" alignContent="center" basis="center">
+            <Rating value={rating} onChange={(event, newRating) => { setRating(newRating)}} />
+          </Box>
+          <Box direction="row" gap="xlarge" pad='medium' justify="center">
+            <Button onClick={onSubmitHandler}>Submit</Button>
+            <Button onClick={resetForm}>Reset</Button>
           </Box>
         </Box>
       </Grid>
@@ -127,6 +137,7 @@ const Reviews = ({ reviews }: any) => {
                   <Typography>{review.title}</Typography>
                   <br></br>
                   <Typography>{review.body}</Typography>
+                  <Rating value={review.rating} readOnly />
                 </Stack>
               </Paper>
             </Grid>

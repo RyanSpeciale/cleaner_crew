@@ -17,4 +17,5 @@ model Review {
   title    String
   verified Boolean
   body     String
+  rating   Int
 }
