@@ -10,7 +10,7 @@ import VerifiedIcon from '@mui/icons-material/Verified';
 import DisabledByDefaultIcon from '@mui/icons-material/DisabledByDefault';
 import axios from "axios";
 
-const admin = ({ reviews, user }: any) => {
+const Admin = ({ reviews, user }: any) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [selection, setSelection] = useState();
@@ -83,7 +83,7 @@ const admin = ({ reviews, user }: any) => {
   );
 };
 
-export default admin;
+export default Admin;
 
 export const getServerSideProps = withSessionSsr(
   async function getServerSideProps({ req }) {
