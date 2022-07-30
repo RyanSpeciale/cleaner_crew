@@ -18,8 +18,8 @@ const Bottom: React.FunctionComponent = () => {
         <div>
             <Footer justify="center" align="center" gap="xsmall">
                 <Text>Coded with <span role='img' aria-label="Heart Emoji">💗</span> by Ryan Speciale.</Text>
-                <Anchor icon={<Github/>} href="" />
-                <Anchor icon={<Twitter/>} href="" />
+                <Anchor icon={<Github/>} href="https://github.com/RyanSpeciale" />
+                <Anchor icon={<Twitter/>} href="https://twitter.com/ryanspeciale" />
             </Footer>
         </div>
     );

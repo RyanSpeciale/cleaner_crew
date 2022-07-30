@@ -5,6 +5,7 @@ import {
   PaginationItem,
   Paper,
   Avatar,
+  Modal,
   Typography,
   Stack,
 } from "@mui/material";
@@ -25,34 +26,36 @@ import {
 import { Button } from "react-bootstrap";
 import { Rating } from "@mui/material";
 import FormatQuoteIcon from '@mui/icons-material/FormatQuote';
-
+import { SettingsInputComponent, SettingsPowerRounded } from "@mui/icons-material";
+import SubmittedModal from "../components/SubmittedModal";
 
 const Reviews = ({ reviews }: any) => {
   const [title, setTitle] = useState("");
   const [name, setName] = useState("");
   const [body, setBody] = useState("");
-  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("")
   const [rating, setRating] = React.useState<number | null>(3);
+  const [open, setOpen] = useState(false)
 
-  function refreshPage() {
-    window.location.reload();
-  }
+  
 
   const onSubmitHandler = async () => {
-    setLoading(true);
     const data = await axios.post("/api/review", {
       name: name,
       title: title,
       body: body,
       rating: rating,
       verified: false,
-    });
-    setTitle("");
-    setName("");
-    setBody("");
-    setRating(0);
-    setLoading(false);
-    refreshPage();
+    })
+     .then((response) => {
+      console.log(response)
+      resetForm()
+      setOpen(true)
+     })
+     .catch((error) => {
+      console.log(error)
+      setError(error)
+     })
   };
 
   const resetForm = () => {
@@ -62,24 +65,6 @@ const Reviews = ({ reviews }: any) => {
     setRating(0);
   };
 
-  useEffect(() => {
-    setLoading(false);
-  }, []);
-
-  if (loading) {
-    return (
-      <Box
-        justify="center"
-        align="center"
-        height="large"
-        alignSelf="center"
-        width="medium"
-        alignContent="center"
-      >
-        <Spinner size="xlarge" message="Loading..." />
-      </Box>
-    );
-  }
 
   return (
     <Grid
@@ -89,6 +74,9 @@ const Reviews = ({ reviews }: any) => {
       sx={{ padding: "5px", margin: "15px" }}
       className={styles.mainContainer}
     >
+      <Modal open={open}>
+        <SubmittedModal />
+      </Modal>
       <Grid item>
         <Grid container justifyContent="center" alignItems="center">
           <Grid
