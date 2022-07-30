@@ -17,6 +17,7 @@ export async function deleteReview(req: NextApiRequest, res: NextApiResponse) {
                 id: id
             }
         })
+        res.json({ Message: "Review deleted"})
     } catch(error) {
         res.json({ Message: error })
     }

@@ -20,6 +20,7 @@ export async function verifyReview(req: NextApiRequest, res: NextApiResponse) {
                 id: id
             }
         })
+        res.json({ Message: "Review Verified"})
     } catch(error) {
         res.json({ Message: error })
     }

@@ -32,7 +32,7 @@ const Login = (props: Props) => {
         console.log(error)
         setError(error)
      })
-     
+     console.log(res)
   };
 
   return (
@@ -54,6 +54,7 @@ const Login = (props: Props) => {
         <Box direction="row" gap="medium" justify="center">
           <Button color="black" type="submit" primary label="Submit" onClick={onSubmitHandler} />
         </Box>
+        {error.length > 3 ? <div style={{ fontSize: '17px', color: 'red'}}>{error}</div> : <></>}
       </Box>
     </div>
   );

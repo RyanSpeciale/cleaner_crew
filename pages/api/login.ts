@@ -20,7 +20,7 @@ async function loginRoute(req: NextApiRequest, res: NextApiResponse) {
       await req.session.save()
       res.status(202).json({ succuess: true, message: "Logged In"})
     } else {
-      res.status(402).json({ success: false, message: "Could not authenticate user"})
+      res.status(406).json({ success: false, message: "Could not authenticate user"})
     }
 
   } catch(error) {
