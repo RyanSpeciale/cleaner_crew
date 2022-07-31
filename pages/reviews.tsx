@@ -194,8 +194,12 @@ export async function getStaticProps() {
   });
 
   return {
-    props: { reviews: data }, // will be passed to the page component as props
-  };
+    props: {
+      reviews: data
+    },
+    revalidate: 60
+
+  }
 }
 export default Reviews;
 

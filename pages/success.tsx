@@ -13,7 +13,7 @@ useEffect(() => {
     
 return (
     <div>
-        <h1>Success</h1>
+        <h1></h1>
     </div>
   )
 }

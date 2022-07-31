@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.css'
 import { Box, Button } from 'grommet'
 import { Text } from 'grommet'
 import SlideShow from '../components/SlideShow'
+import Link from 'next/link'
 
 
 
@@ -23,7 +24,9 @@ const Home: NextPage = () => {
           <Text className={styles.text} alignSelf='center' size='large'>
             Weekly, Bi-Weekly, and Monthly services available.
           </Text>
-          <Button className={styles.button} primary color='black' margin={{ top: '0.8cm'}} alignSelf='center' justify='center' label='Get a Free Quote'/>
+          <Link href={'/quote'} passHref>
+            <Button className={styles.button} primary color='black' margin={{ top: '0.8cm'}} alignSelf='center' justify='center' label='Get a Free Quote'/>
+          </Link>
         </Box>
       </Box>
     </div>

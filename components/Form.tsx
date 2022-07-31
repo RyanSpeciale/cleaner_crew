@@ -18,7 +18,7 @@ const FormComponent = () => {
 				send(process.env.NEXT_PUBLIC_EMAILJS_SERVICEID!, process.env.NEXT_PUBLIC_EMAILJS_TEMPLATEID!, value, process.env.NEXT_PUBLIC_EMAILJS_PUBLICKEY!)
 					.then((response) => {
 						console.log(response.text)
-						router.push('/success')
+						router.push('/')
 					}, (error) => {
 						console.log(error.text)
 					})
