@@ -10,7 +10,7 @@ import VerifiedIcon from '@mui/icons-material/Verified';
 import DisabledByDefaultIcon from '@mui/icons-material/DisabledByDefault';
 import axios from "axios";
 
-const Admin = ({ reviews, user }: any) => {
+const Admin: React.FC = ({ reviews, user }: any) => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [selection, setSelection] = useState();
