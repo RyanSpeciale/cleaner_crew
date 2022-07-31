@@ -92,10 +92,10 @@ const Reviews = ({ reviews }: any) => {
             }}
           >
             <Typography align="center" variant="h5">
-              We value our client's feedback more than anything else.
+              We value our client&apos;s feedback more than anything else.
             </Typography>
             <Typography align="center" variant="h6">
-              Leave us a review, and while your at it check out what other's
+              Leave us a review, and while your at it check out what other&apos;s
               have said!
             </Typography>
           </Grid>
