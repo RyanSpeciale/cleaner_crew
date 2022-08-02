@@ -12,7 +12,7 @@ const services = () => {
 					width='large'
 					direction='row-responsive'
 					round='medium'
-					height='medium'
+					height='fit-content'
 					gap='medium'
 					justify='center'
 					border={{ size: 'small', color: 'black' }}
@@ -68,7 +68,7 @@ const services = () => {
 					</Tabs>
 				</Box>
 				<Box
-					margin={{ top: '0.5cm' }}
+					margin={{ top: '1cm' }}
 					border={{ size: 'medium', color: 'black' }}
 					round='small'
 				>
